@@ -25,7 +25,7 @@ class ThirdFilmSection extends Component {
   render() {
     return (
       <Container>
-        <h4 className="text-light d-flex justify-content-start">Watch it Again</h4>
+        <h4 className="text-light d-flex justify-content-start">New Releases</h4>
         <div
           className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 py-4 flex-nowrap no-gutters"
           style={{ overflow: "hidden" }}

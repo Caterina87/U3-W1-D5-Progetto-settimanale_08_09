@@ -18,13 +18,6 @@ class MyHeader extends Component {
             >
               Genres &nbsp;
             </button>
-            <div className="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-              <ul>
-                <li className="dropdown-item text-white bg-dark">Comedy</li>
-                <li className="dropdown-item text-white bg-dark">Drama</li>
-                <li className="dropdown-item text-white bg-dark">Thriller</li>
-              </ul>
-            </div>
           </div>
           <div>
             <i className="bi bi-list"></i>

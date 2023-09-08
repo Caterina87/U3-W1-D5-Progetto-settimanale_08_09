@@ -7,16 +7,16 @@ class FilmSection extends Component {
     films: [],
   };
   componentDidMount = () => {
-    this.HarryPotter();
+    this.StarWars();
   };
 
-  HarryPotter = async () => {
+  StarWars = async () => {
     try {
-      const response = await fetch("http://www.omdbapi.com/?apikey=12b061f8&s=harry%20potter");
+      const response = await fetch("http://www.omdbapi.com/?apikey=12b061f8&s=star%20wars");
       const data = await response.json();
-      const harryPotter = data.Search;
+      const StarWars = data.Search;
       console.log(data.Search);
-      this.setState({ films: harryPotter });
+      this.setState({ films: StarWars });
     } catch (error) {
       console.log(error);
     }
