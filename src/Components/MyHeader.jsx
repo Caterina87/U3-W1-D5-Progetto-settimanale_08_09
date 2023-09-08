@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Dropdown, Navbar } from "react-bootstrap";
 
 class MyHeader extends Component {
   render() {
@@ -7,22 +7,16 @@ class MyHeader extends Component {
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <h2 className="ms-2 mb-4 text-light fs-1">TV Shows</h2>
-          <div className="dropdown">
-            <button
-              className="btn btn-dark border-light btn-sm dropdown-toggle rounded-0"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Genres &nbsp;
-            </button>
-          </div>
-          <div>
-            <i className="bi bi-list"></i>
-            <i className="bi bi-list"></i>
-          </div>
+          <Dropdown>
+            <Dropdown.Toggle variant="dark" id="dropdown-basic" className="border light">
+              Geners
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="#/action-1">Drama</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Comedy</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Container>
       </Navbar>
     );

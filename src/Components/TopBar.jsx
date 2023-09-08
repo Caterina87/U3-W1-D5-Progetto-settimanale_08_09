@@ -1,10 +1,10 @@
 import { Component } from "react";
-import { Container, ListGroup, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 class TopBar extends Component {
   render() {
     return (
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar expand="lg" bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -26,18 +26,6 @@ class TopBar extends Component {
               <Nav.Link href="#link">Recenely Added</Nav.Link>
               <Nav.Link href="#link">My List</Nav.Link>
             </Nav>
-            <ListGroup horizontal className="text color:white">
-              <ListGroup.Item>
-                <i class="bi bi-search"></i>
-              </ListGroup.Item>
-              <ListGroup.Item>KIDS</ListGroup.Item>
-              <ListGroup.Item>
-                <i className="bi bi-bell"></i>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <i className="bi bi-person"></i>
-              </ListGroup.Item>
-            </ListGroup>
           </Navbar.Collapse>
         </Container>
       </Navbar>
